@@ -10,27 +10,29 @@ import Image from 'material-ui-image'
 
 const styles = {
     headContainer: {
-        width: "100%", 
-        backgroundImage: `url(${Background})`, 
-        backgroundColor: fade('#000000', 0.3), 
-        
+        backgroundImage: `url(${Background})`,
+        backgroundColor: fade('#000000', 0.3),
+        height: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
     },
     customImg: {
         height: "500px"
+    },
+    bg: {
+        
     }
 };
 
 export default function Head() {
     return (
         <div id="home" style={styles.headContainer}>
-            <Image src={Background} styleImage={styles.customImg}>
-                
-            </Image>
             <Grid container
                 justify="center"
                 alignItems="center">
                 <Grid item>
-                    
+
                     <Typography color="primary"
                         align="center">
                         <h1>Software Developer</h1>
@@ -39,7 +41,7 @@ export default function Head() {
                     </Typography>
                 </Grid>
             </Grid>
-            
+
         </div>
     )
 }

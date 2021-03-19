@@ -10,9 +10,10 @@ import Grid from '@material-ui/core/Grid'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{height:"100%"}}>
       <Grid container
-        direction="column">
+        direction="column"
+        style={{height:"100%"}}>
         <Grid item>
           <NavBar />
         </Grid>
