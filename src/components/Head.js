@@ -1,6 +1,5 @@
 import React from "react"
 import Grid from '@material-ui/core/Grid'
-import Photo from '../images/photo.jpg'
 import Background from '../images/head_back.jpg'
 import { fade } from '@material-ui/core/styles/colorManipulator'
 import Typography from '@material-ui/core/Typography'
@@ -32,12 +31,12 @@ export default function Head() {
                 justify="center"
                 alignItems="center">
                 <Grid item>
-
-                    <Typography color="primary"
+                    <Typography color="secondary"
                         align="center">
                         <h1>Software Developer</h1>
                         <h2>Maksym Haponov</h2>
-                        <p>I am coder from Ukraine. Currently studing in Canada</p>
+                        <p>I am coder from Ukraine, currently studing in Canada.</p>
+                        <p>The website is under construction.</p>
                     </Typography>
                 </Grid>
             </Grid>

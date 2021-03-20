@@ -19,7 +19,7 @@ import { Home, KeyboardArrowUp } from "@material-ui/icons";
 
 export default function NavBar() {
     return (
-        <header style={{backgroundColor: "blue"}}>
+        <header style={{backgroundColor: "#3f51b5"}}>
             <HideOnScroll>
                 <AppBar position="fixed">
                     <Toolbar>
