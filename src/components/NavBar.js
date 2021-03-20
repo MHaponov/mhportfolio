@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+//import { NavLink } from "react-router-dom"
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
 import AppBar from '@material-ui/core/AppBar'
@@ -8,18 +8,20 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Link from '@material-ui/core/Link'
 import Icon from '@material-ui/icons/Email'
 import HideOnScroll from './HideOnScroll'
-import BackToTop from "./BackToTop";
+import BackToTop from "./BackToTop"
 
 import {
-  Container,
-  Fab
+    Fab,
+    MenuItem,
+    MenuList
 } from "@material-ui/core";
-import { Home, KeyboardArrowUp } from "@material-ui/icons";
+import { KeyboardArrowUp } from "@material-ui/icons";
 
 
 export default function NavBar() {
+    
     return (
-        <header style={{backgroundColor: "#3f51b5"}}>
+        <header style={{ backgroundColor: "#3f51b5" }}>
             <HideOnScroll>
                 <AppBar position="fixed">
                     <Toolbar>
@@ -33,6 +35,16 @@ export default function NavBar() {
                             <Grid item>
                                 <Link color="textPrimary" href="#about"><Typography>About</Typography></Link>
                             </Grid>
+                            <Grid>
+                                <MenuList>
+                                    <MenuItem>
+                                        LinkedIn
+                                    </MenuItem>
+                                    <MenuItem>
+                                        Facebook
+                                    </MenuItem>
+                                </MenuList>
+                            </Grid>
                             <Grid item>
                                 <Button
                                     href="mailto:gaponovm08@gmail.com"
@@ -41,17 +53,17 @@ export default function NavBar() {
                                     size="small"
                                     startIcon={<Icon />}>
                                     Contact me
-                            </Button>
+                                </Button>
                             </Grid>
                         </Grid>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
 
-            <Toolbar id="back-to-top-anchor" /> 
+            <Toolbar id="back-to-top-anchor" />
             <BackToTop>
                 <Fab color="secondary" size="large" aria-label="scroll back to top">
-                <KeyboardArrowUp />
+                    <KeyboardArrowUp />
                 </Fab>
             </BackToTop>
         </header>

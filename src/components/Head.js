@@ -3,9 +3,6 @@ import Grid from '@material-ui/core/Grid'
 import Background from '../images/head_back.jpg'
 import { fade } from '@material-ui/core/styles/colorManipulator'
 import Typography from '@material-ui/core/Typography'
-import Container from '@material-ui/core/Container'
-import Paper from '@material-ui/core/Paper'
-import Image from 'material-ui-image'
 
 const styles = {
     headContainer: {
@@ -14,7 +11,8 @@ const styles = {
         height: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
+        clear: "both"
     },
     customImg: {
         height: "500px"

@@ -6,8 +6,8 @@ import Icon from '@material-ui/icons/Email'
 
 const styles = {
     contactMeContainer: {
-        border: "1px solid black",
-        height: "200px"
+        height: "200px",
+        backgroundColor: "#3f51b5"
     }
 };
 
