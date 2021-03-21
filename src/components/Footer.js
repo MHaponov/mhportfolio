@@ -1,22 +1,23 @@
 import React from "react"
 import Typography from '@material-ui/core/Typography'
+import Container from '@material-ui/core/Container'
 
 const styles = {
     footerContainer: {
-        border: "1px solid black",
-        height: "50px",
-        align: "center"
+        backgroundColor: "black",
+        textAlign: "center",
+        margin: "auto",
+        padding: "10px"
     }
 };
 
 export default function ContactMe() {
     return (
         <div style={styles.footerContainer}>
-            <Typography color="primary"
+            <Typography color="secondary"
                 align="center">
-                Copyright , Maksym Haponov
+                Copyright © 2021 Maksym Haponov 
             </Typography>
-
         </div>
     )
 }

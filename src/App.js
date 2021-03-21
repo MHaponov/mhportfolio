@@ -9,7 +9,7 @@ import Head from './components/Head'
 
 function App() {
   return (
-    <div className="App" style={{height:"100%"}}>
+    <div className="App" id="home" style={{height:"100%"}}>
       <NavBar />
       <Head />
       <About />

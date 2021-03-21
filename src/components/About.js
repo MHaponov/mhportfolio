@@ -8,7 +8,7 @@ import Photo from '../images/photo.jpg'
 
 const styles = {
     aboutContainer: {
-        border: "1px solid black",
+        
     },
     imgStyle: {
         borderRadius: "50%"

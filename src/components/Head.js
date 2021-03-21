@@ -7,29 +7,33 @@ import Typography from '@material-ui/core/Typography'
 const styles = {
     headContainer: {
         backgroundImage: `url(${Background})`,
-        backgroundColor: fade('#000000', 0.3),
-        height: "100%",
+        backgroundColor: "black",
+        height: "93%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        clear: "both"
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column"
     },
     customImg: {
-        height: "500px"
+        filter: "Brightness(50%)"
     },
     bg: {
-        
+
     }
 };
 
 export default function Head() {
     return (
-        <div id="home" style={styles.headContainer}>
+        <div style={styles.headContainer}>
             <Grid container
                 justify="center"
-                alignItems="center">
+                alignItems="center"
+                justifyContent="center"
+                style={{}}>
                 <Grid item>
-                    <Typography color="secondary"
+                    <Typography style={{color: "white"}}
                         align="center">
                         <h1>Software Developer</h1>
                         <h2>Maksym Haponov</h2>

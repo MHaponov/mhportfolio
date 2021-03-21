@@ -6,7 +6,8 @@ import Icon from '@material-ui/icons/Email'
 
 const styles = {
     contactMeContainer: {
-        height: "200px",
+        paddingTop: "20px",
+        paddingBottom: "50px",
         backgroundColor: "#3f51b5"
     }
 };
@@ -15,12 +16,9 @@ export default function ContactMe() {
     return (
         <div style={styles.contactMeContainer}>
             <Grid container
-                justify="center"
-                alignItems="center"
                 direction="column">
                 <Grid item>
-                    <Typography color="secondary"
-                        align="center">
+                    <Typography color="secondary">
                         <h1>Lets discuss</h1>
                     </Typography>
                 </Grid>
