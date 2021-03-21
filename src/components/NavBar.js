@@ -19,7 +19,8 @@ import {
     MenuList,
     List,
     ListItem,
-    ListItemText
+    ListItemText,
+    Container
 } from "@material-ui/core";
 import { KeyboardArrowUp, MenuBook } from "@material-ui/icons";
 
@@ -29,7 +30,7 @@ function ListItemLink(props) {
 
 const styles = {
     button: {
-        color: "white"
+        color: "white",
     }
 }
 
@@ -37,40 +38,41 @@ export default function NavBar() {
 
     return (
         <header style={{ backgroundColor: "#3f51b5" }}>
+            <Toolbar id="back-to-top-anchor" />
             <HideOnScroll>
                 <AppBar position="fixed">
-                    <Toolbar style={{justifyContent:"right", backgroundColor: "#070057"}}>
-                        <Typography variant="Title" >Maksym Haponov - Portfolio (under construction)</Typography>
-                        <Button style={styles.button} href="#home">Home</Button>
-                        <Button style={styles.button} href="#about" >About me</Button>
-                        <Button style={styles.button} href="#my-projects">My Projects</Button>
-                        <Button style={styles.button}>Social media</Button>
-                        <Menu>
-                            <MenuItem leftIcon={<LinkedinIcon />}>
-                                LinkedIn
-                            </MenuItem>
-                            <MenuItem startIcon={<FacebookIcon />}>
-                                Facebook
-                            </MenuItem>
-                        </Menu>
-                        <Grid container
-                            alignItems="center"
-                            justify="flex-end">
-                            <Grid item>
-                                <Button
-                                    href="mailto:gaponovm08@gmail.com"
-                                    variant="contained"
-                                    color="secondary"
-                                    startIcon={<EmailIcon />}>
-                                    Contact me
-                                </Button>
+                    <Toolbar style={{ backgroundColor: "#070057" }}>
+                        <Container>
+                            <Grid container
+                                justify="space-between">
+                                <Grid item>
+                                    <Button style={styles.button} href="#home">Home</Button>
+                                    <Button style={styles.button} href="#about" >About me</Button>
+                                    <Button style={styles.button} href="#my-projects">My Projects</Button>
+                                    <Button style={styles.button}>Social media</Button>
+                                    <Menu>
+                                        <MenuItem leftIcon={<LinkedinIcon />}>
+                                            LinkedIn
+                                        </MenuItem>
+                                        <MenuItem startIcon={<FacebookIcon />}>
+                                            Facebook
+                                        </MenuItem>
+                                    </Menu>
+                                </Grid>
+                                <Grid item>
+                                    <Button
+                                        href="mailto:gaponovm08@gmail.com"
+                                        variant="contained"
+                                        color="secondary"
+                                        startIcon={<EmailIcon />}>
+                                        Contact me
+                                    </Button>
+                                </Grid>
                             </Grid>
-                        </Grid>
+                        </Container>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>
-
-            <Toolbar id="back-to-top-anchor" />
             <BackToTop>
                 <Fab color="secondary" size="large" aria-label="scroll back to top">
                     <KeyboardArrowUp />
