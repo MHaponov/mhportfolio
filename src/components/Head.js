@@ -1,14 +1,13 @@
 import React from "react"
 import Grid from '@material-ui/core/Grid'
 import Background from '../images/head_back.jpg'
-import { fade } from '@material-ui/core/styles/colorManipulator'
 import Typography from '@material-ui/core/Typography'
 
 const styles = {
     headContainer: {
         backgroundImage: `url(${Background})`,
         backgroundColor: "black",
-        height: "93%",
+        height: "calc(100% - 60px)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
