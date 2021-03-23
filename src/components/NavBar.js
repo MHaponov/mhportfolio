@@ -32,12 +32,11 @@ const styles = {
 
 export default function NavBar() {
     return (
-        <header style={{ backgroundColor: "#380E36" }}>
-            <HideOnScroll>
-                <AppBar position="fixed">
-                    <Toolbar color="primary">
+        <header style={{ backgroundColor: "#1F2833", minHeight: "64px" }} >
+            <HideOnScroll style={{ minHeight: "64px" }}>
+                <AppBar position="fixed" style={{ minHeight: "64px" }}>
+                    <Toolbar color="primary" style={{ minHeight: "64px" }}>
                         <Container xs="12">
-
                             <Grid container
                                 justify="space-between">
                                 <Grid item>
@@ -45,7 +44,7 @@ export default function NavBar() {
                                         Sandwich Drawer Menu
                                     </Hidden>
                                     <Hidden smDown>
-                                        <Button size="large" style={styles.button} href="#home">Home</Button>
+                                        <Button style={styles.button} href="#home">Home</Button>
                                         <Button style={styles.button} href="#about" >About me</Button>
                                         <Button style={styles.button} href="#my-projects">My Projects</Button>
                                         <Button style={styles.button}>Social media</Button>
@@ -59,11 +58,12 @@ export default function NavBar() {
                                         </Menu>
                                     </Hidden>
                                 </Grid>
-                                <Grid item>
-                                    <Button
+                                <Grid item justifyItems="center">
+                                    <Button 
                                         href="mailto:gaponovm08@gmail.com"
                                         variant="contained"
                                         color="secondary"
+                                        
                                         startIcon={<EmailIcon />}>
                                         Contact me
                                     </Button>

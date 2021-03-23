@@ -1,13 +1,13 @@
 import React from "react"
 import Grid from '@material-ui/core/Grid'
-import Background from '../images/head_back.jpg'
+import Background from '../images/head_back.png'
 import Typography from '@material-ui/core/Typography'
 
 const styles = {
     headContainer: {
         backgroundImage: `url(${Background})`,
         backgroundColor: "black",
-        height: "calc(100% - 60px)",
+        height: "calc(100% - 64px)",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",

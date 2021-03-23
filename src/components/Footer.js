@@ -3,7 +3,8 @@ import Typography from '@material-ui/core/Typography'
 
 const styles = {
     footerContainer: {
-        backgroundColor: "black",
+        backgroundColor: "#0B0C10",
+        color: "white",
         textAlign: "center",
         margin: "auto",
         padding: "10px"
@@ -13,7 +14,7 @@ const styles = {
 export default function ContactMe() {
     return (
         <div style={styles.footerContainer}>
-            <Typography color="secondary"
+            <Typography
                 align="center">
                 Copyright © 2021 Maksym Haponov 
             </Typography>

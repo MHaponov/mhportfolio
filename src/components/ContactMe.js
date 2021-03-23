@@ -11,18 +11,21 @@ const styles = {
     contactMeContainer: {
         paddingTop: "25px",
         paddingBottom: "45px",
-        backgroundColor: "#380E36"
+        backgroundColor: "#1F2833"
+    },
+    button: {
+        color: "white"
     }
 };
 
 export default function ContactMe() {
     return (
-        <div style={styles.contactMeContainer}>
+        <div style={styles.contactMeContainer} color="primary">
             <Grid container
                 direction="column">
                 <Grid item>
-                    <Typography color="secondary">
-                        <h1>Let me know what you up to</h1>
+                    <Typography style={styles.button}>
+                        <h1>Let's work together</h1>
                     </Typography>
                 </Grid>
                 <Grid item>
@@ -36,12 +39,12 @@ export default function ContactMe() {
                     </Button>
                 </Grid>
                 <Grid item>
-                    <Typography color="secondary"><h2>or</h2></Typography>
+                    <Typography style={styles.button}><h2>or</h2></Typography>
                 </Grid>
                 <Grid item>
-                    <Button color="secondary"><FacebookIcon /></Button>
-                    <Button color="secondary"><LinkedinIcon /></Button>
-                    <Button color="secondary"><GithubIcon /></Button>
+                    <Button size="large" style={styles.button}><FacebookIcon /></Button>
+                    <Button size="large" style={styles.button}><LinkedinIcon /></Button>
+                    <Button size="large" style={styles.button}><GithubIcon /></Button>
                 </Grid>
             </Grid>
 
