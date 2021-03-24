@@ -12,10 +12,8 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import HideOnScroll from './HideOnScroll'
 import BackToTop from "./BackToTop"
-import { makeStyles } from '@material-ui/core/styles';
 import {
     Fab,
-    Menu,
     MenuList,
     MenuItem,
     Container,
@@ -28,28 +26,13 @@ import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
 import SideDrawer from '../components/SideDrawer'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: 'flex',
-    },
-    paper: {
-        marginRight: theme.spacing(2),
-    },
-}));
-
 const styles = {
     button: {
-        color: "white",
-        '&:hover': {
-            backgroundColor: "white",
-
-        }
+        color: "white"
     }
-
 }
 
 export default function NavBar() {
-    const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef(null);
 
