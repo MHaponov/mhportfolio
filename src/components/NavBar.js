@@ -28,7 +28,10 @@ import SideDrawer from '../components/SideDrawer'
 
 const styles = {
     button: {
-        color: "white"
+        color: "white",
+        textDecoration: "bold",
+        fontSize: "16px",
+        padding: "16px 15px"
     }
 }
 
@@ -64,7 +67,7 @@ export default function NavBar() {
     }, [open]);
 
     return (
-        <header style={{ backgroundColor: "#1F2833", minHeight: "64px" }} >
+        <header style={{ minHeight: "64px" }} >
             <Toolbar id="back-to-top-anchor" />
             <HideOnScroll style={{ minHeight: "64px" }}>
                 <AppBar position="fixed" style={{ minHeight: "64px" }}>
@@ -90,7 +93,7 @@ export default function NavBar() {
                                             style={styles.button}>
                                             Social media
                                             </Button>
-                                        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+                                        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal onScroll={handleClose}>
                                             {({ TransitionProps, placement }) => (
                                                 <Grow
                                                     {...TransitionProps}
@@ -98,9 +101,9 @@ export default function NavBar() {
                                                     <Paper>
                                                         <ClickAwayListener onClickAway={handleClose}>
                                                             <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                                                                <MenuItem onClick={handleClose}><LinkedinIcon/>  LinkedIn</MenuItem>
-                                                                <MenuItem onClick={handleClose}><FacebookIcon/>  Facebook</MenuItem>
-                                                                <MenuItem onClick={handleClose}><GithubIcon/>  GitHub</MenuItem>
+                                                                <MenuItem component="a" href="https://www.linkedin.com/in/maksym-haponov-2b7a201a1" onClick={handleClose}><LinkedinIcon style={{marginRight: "10px"}}/>LinkedIn</MenuItem>
+                                                                <MenuItem component="a" href="https://www.facebook.com/maksym.haponov.9" onClick={handleClose}><FacebookIcon style={{marginRight: "10px"}}/>Facebook</MenuItem>
+                                                                <MenuItem component="a" href="https://github.com/MHaponov" onClick={handleClose}><GithubIcon style={{marginRight: "10px"}}/>GitHub</MenuItem>
                                                             </MenuList>
                                                         </ClickAwayListener>
                                                     </Paper>
@@ -110,10 +113,11 @@ export default function NavBar() {
                                     </Hidden>
                                 </Grid>
                                 <Grid item justifyItems="center">
-                                    <Button
+                                    <Button 
                                         href="mailto:gaponovm08@gmail.com"
                                         variant="contained"
                                         color="secondary"
+                                        style={{color:"white"}}
                                         startIcon={<EmailIcon />}>
                                         Contact me
                                     </Button>

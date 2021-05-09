@@ -3,18 +3,18 @@ import './App.css'
 import Projects from './components/Projects'
 import About from './components/About'
 import NavBar from './components/NavBar'
-import ContactMe from './components/ContactMe'
+import ContactMe from './components/contactMe/ContactMe'
 import Footer from './components/Footer'
-import Head from './components/Head'
+import Head from './components/head/Head'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#1F2833'
+      main: '#091921'
     },
     secondary: {
-      main: '#46A29F'
+      main: '#2F968B'
     }
   }
 });
@@ -22,15 +22,13 @@ const theme = createMuiTheme({
 function App() {
   return (
     <MuiThemeProvider theme={theme}>
-      <div className="App" id="home" style={{ height: "100%" }}>
-
+      <div className="App" id="home">
         <NavBar />
         <Head />
         <About />
         <Projects />
         <ContactMe />
         <Footer />
-
       </div>
     </MuiThemeProvider>
   )
