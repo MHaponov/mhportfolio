@@ -6,7 +6,7 @@ import {useRef} from "react"
 const styles = {
     headContainer: {
         backgroundColor: "black",
-        height: "100%",
+        height: "100vh",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -17,14 +17,15 @@ const styles = {
     bg: {
         position: "absolute",
         width: "100%",
-        height: "110vh",
+        height: "100vh",
         objectFit: "cover",
         top: "0",
         left: "0",
         backgroundPosition: "center",
         backgroundSize: "cover",
         zIndex: "1",
-        filter: "Brightness(60%)"
+        filter: "Brightness(60%)",
+        marginTop: "64px"
     }
 };
 
