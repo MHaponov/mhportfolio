@@ -70,7 +70,7 @@ export default function About() {
                     </Grid>
                     <Grid item xs="12" sm="10" md="8">
                         <Typography align="left">
-                            <h2 style={{paddingTop: 0, marginTop: 0}}>Personality and Qualification Highlights</h2>
+                            <h2 style={{paddingTop: 0, marginTop: 0}}>Personality & Qualification Highlights</h2>
                             <p>
                                 <ul>
                                     <li>

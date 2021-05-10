@@ -16,7 +16,7 @@ export default function ContactMe() {
         <div style={styles.footerContainer}>
             <Typography
                 align="center">
-                Copyright © {new Date().getFullYear} | Maksym Haponov 
+                Copyright © {new Date().getFullYear()} | Maksym Haponov 
             </Typography>
         </div>
     )
