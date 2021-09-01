@@ -44,7 +44,7 @@ export default function About() {
                                     <p><b>Full Name:</b> Maksym Haponov</p>
                                 </li>
                                 <li>
-                                    <p><b>Age:</b> 22</p>
+                                    <p><b>Age:</b> 23</p>
                                 </li>
                                 <li>
                                     <p><b>Origin:</b> Sumy, Ukraine</p>
@@ -52,17 +52,21 @@ export default function About() {
                                 <li>
                                     <p><b>Specialization:</b> Informatics (Computer Science), Software Developer</p>
                                 </li>
+                                
                             </ul>
-                            <h2>Background in</h2>
+                            <h2>Experience in</h2>
                             <ul>
                                 <li>
                                     <p><b>Programming languages:</b> C/C++, C#, Java, PHP, JavaScript, Python </p>
                                 </li>
                                 <li>
-                                    <p><b>Databases:</b> Oracle, MySQL, SQL Server, MongoDB </p>
+                                    <p><b>Databases:</b> Oracle, MySQL, SQL Server, MongoDB, Firebase </p>
                                 </li>
                                 <li>
                                     <p><b>Operating systems:</b> Microsoft Windows, Linux (CentOS, Ubuntu)</p>
+                                </li>
+                                <li>
+                                    <p><b>Other technologies such as:</b> Version Control Systems (Git, SVN), ReactJS, Stapi, Unity</p>
                                 </li>
                             </ul>
                         </Typography>
@@ -106,14 +110,14 @@ export default function About() {
                             <div style={styles.eduBlock}>
                                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                                     <b>Computer Application Development</b>
-                                    <b>September, 2020 – Present</b></div>
+                                    <b>September, 2020 – April, 2021</b></div>
                                 <div>
-                                    <p style={styles.eduParagraph}>Postgraduate Certificate (Co-op)</p>
+                                    <p style={styles.eduParagraph}>Postgraduate Certificate</p>
                                     <p style={styles.eduParagraph}>Conestoga Collage, Waterloo, Ontario</p>
                                 </div>
                                 <ul>
                                     <li>
-                                        GPA – First Semester 3.9, Second Semester 4.0
+                                        GPA – 4.0
                                     </li>
                                     <li>
                                         Advanced web and mobile programming

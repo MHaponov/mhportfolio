@@ -42,10 +42,10 @@ export default function Head() {
                 justifyContent="center"
                 style={{ zIndex: "15" }}>
                 <Grid item>
-                    <Typography style={{ color: "white", zIndex: "15", marginBottom: "20vh" }}
+                    <Typography style={{ color: "white", zIndex: "15", marginBottom: "20vh"}}
                         align="center">
                         <h1 style={{fontSize:"44px"}}>Software Developer</h1>
-                        <p style={{fontSize:"26px", maxWidth:"600px"}}>My name is Maksym Haponov. I am a programmer from Ukraine.</p>
+                        <p style={{fontSize:"26px", maxWidth:"600px"}}>I'm Maksym, a programmer from Ukraine</p>
                     </Typography>
                 </Grid>
             </Grid>

@@ -17,28 +17,31 @@ const styles = {
         paddingBottom: "60px"
     },
     card: {
-        minWidth: "350px",
-        maxWidth: "350px"
+        display: "flex",
+        flexDirection: "column",
+        width: "350px",
+        boxShadow: "0px 0px 2px",
+        alignItems: "center"
     },
     cardParagraph: {
         textAlign: "left",
-        minHeight: "50px"
     },
     cardMedia: {
         height: "200px",
+        width: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
     },
     cardButton: {
-        justifyContent: "center"
+        justifySelf: "flex-end",
     }
 }
 
 export default function Projects() {
     return (
         <Container id="my-projects" style={styles.projectsContainer}>
-            <h1 style={{paddingBottom: "20px"}}>My Projects</h1>
+            <h1 style={{paddingBottom: "20px"}}>Few of my projects</h1>
             <Grid container
                 direction="row"
                 spacing={3}
@@ -46,7 +49,7 @@ export default function Projects() {
                 <Grid item>
                     <Card style={styles.card}>
                         <CardMedia style={styles.cardMedia} image={PortfolioScreen}>
-
+                            
                         </CardMedia>
                         <CardContent>
                             <h3>Portfilio Webpage</h3>
@@ -62,7 +65,6 @@ export default function Projects() {
                 <Grid item>
                     <Card style={styles.card}>
                         <CardMedia style={styles.cardMedia} image={PopupMealScreen}>
-
                         </CardMedia>
                         <CardContent>
                             <h3>Popup Meals Project</h3>
@@ -82,7 +84,7 @@ export default function Projects() {
                         </CardMedia>
                         <CardContent>
                             <h3>Augmenify Project</h3>
-                            <p style={styles.cardParagraph}>This project was developed as part of System Development Project course. Our team had to find a client, communicate throughout the project and deliver product to them. The project is website of Augmenify company that do AI- and Web-related development. We used React.JS for the front-end, Strapi headless CMS for the back-end, and MongoDB as the NoSQL Database.</p>
+                            <p style={styles.cardParagraph}>This project was developed as part of System Development Project course. Our team had to find a client, communicate throughout the project and deliver product to them. The project is website of Augmenify company that do AI- and Web-related development. We used React.JS for the front-end, Strapi headless CMS for the back-end, and MongoDB as the NoSQL database.</p>
                         </CardContent>
                         <CardActions style={styles.cardButton}>
                             <Button size="small" color="primary" href="https://github.com/MHaponov/Augmenify">

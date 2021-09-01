@@ -16,7 +16,13 @@ const theme = createMuiTheme({
     secondary: {
       main: '#2F968B'
     }
-  }
+  },
+  typography: {
+    fontFamily: [
+      '"Ubuntu"',
+      'sans-serif'
+    ].join(','),
+  },
 });
 
 function App() {
